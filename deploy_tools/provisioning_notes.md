@@ -9,7 +9,7 @@ Provisioning a new site
 * Git
 
 eg, on Ubuntu:
-	
+
 	sudo add-apt-repository ppa:deadsnakes/ppa
 	sudo apt-get update
 	sudo apt-get install nginx git python36 python3.6-venv
@@ -33,7 +33,7 @@ Assume we have a user account at /home/username
 /home/username
 └── sites
     └── SITENAME
-	  ├── database
-	  ├── source
-	  ├── static
-	  └── virtualenv
+				  ├── database
+				  ├── source
+				  ├── static
+				  └── virtualenv
