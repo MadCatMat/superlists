@@ -6,7 +6,7 @@ Restart=on-failure
 User=mathieum
 WorkingDirectory=/home/mathieum/sites/SITENAME/source
 ExecStart=/home/mathieum/sites/SITENAME/virtualenv/bin/gunicorn \
-	--bind unix:/temp/SITENAME.socket \
+	--bind unix:/tmp/SITENAME.socket \
 	superlists.wsgi:application
 
 [Install]
