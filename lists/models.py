@@ -9,3 +9,10 @@ class List(models.Model):
 class Item(models.Model):
     text = models.TextField(default='')
     user_list = models.ForeignKey(List, default=None)
+
+    class Meta:
+        ordering = ('id',)
+        unique_together = ('user_list', 'text')
+
+    def __str__(self):
+        return self.text
